@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login - City problems</title>
+        <link rel="icon" type="image/ico" href="imagens/32officeicons-1_89729.svg"/>
+        <meta harset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+    </head>
+
+    <body>
+
+        <div class="login-page">
+            <h1>City Problems</h1>
+
+            <p id="errorMessage"></p>
+            <p id="message"></p>
+
+            <div class="form">
+            <section id="autenticacaoUser">
+              <form class="login-form">
+                <p><input type="text" id="txtEmail" placeholder="e-mail" required/></p>
+                <p><input type="password" id="pssSenha" placeholder="senha" required/></p>
+                <button onclick="authenticateUser(event);"> login</button>
+                <p class="message">Não é cadastrado? <a href="cadastro.html">crie sua conta</a></p>
+                <p class="message"><a href="reset1.html">Esqueci minha senha</a></p>
+              </form>
+            </section>
+            </div>
+          </div>
+
+          <div id="rodapeLista"> 
+            <a href="listagemGeral.html"><img class="logos" src="imagens/lista.svg" alt="Lista de problemas" width="30" /></a>
+           <p>Copyright © 2021 | Letícia de Araújo Leal</p>
+          </div>
+
+          <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+  
+          <script type="text/javascript" src="script/env.js"></script>
+          <script type="text/javascript" src="script/login.js"></script>       
+    </body>
+
+    </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - City problems</title>
+        <link rel="icon" type="image/ico" href="imagens/32officeicons-1_89729.svg"/>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+    </head>
+
+    <body>
+
+        <h1>City Problems</h1>
+        
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#" onclick="deslogar(event)">Sair</a></li>
+                <li><a href="resetSenha.html">Alterar senha</a></li>
+                <li><a href="cadastroProblem.html">Novo cadastro</a></li>
+            </ul>
+        </nav>
+
+        <p></p>
+        <div class="listaProblemGeral" id="listaProblemGeral" >         
+            <h3>Segue abaixo a sua lista de registros:</h3>  
+            <table id="tabela1">
+                <thead>
+                </thead>
+            </table>
+        </div>
+
+       <hr>
+       
+       <p></p>
+       <div class="form">       
+        <form id="formulario">
+            <h3>Digite o ID do registro que você pretende remover ou alterar</h3>
+            <input type="text" id="txtRemove" maxlength="100" required/>
+            <p><button onclick="removeProblema(event);"> Remover</button></p>
+            <button onclick="paginaEditarProblema(event)">Editar</button>       
+        </form> 
+    </div>   
+
+    <div id="rodapeLista"> 
+       <p>Copyright © 2021 | Letícia de Araújo Leal</p>
+      </div>
+
+      <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+
+      <script type="text/javascript" src="script/env.js"></script>
+      <script type="text/javascript" src="script/script.js"></script>
+      <script type="text/javascript" src="script/tabela.js"></script>
+      <script type="text/javascript" src="script/login.js"></script>
+
+    </body>
+    
+</html>

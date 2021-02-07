@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro - City problems</title>
+        <link rel="icon" type="image/ico" href="imagens/32officeicons-1_89729.svg"/>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+    </head>
+
+    <body>
+        
+        <h1>City Problems</h1>
+        
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resetSenha.html">Alterar senha</a></li>               
+            </ul>
+        </nav>
+
+        <p></p>
+        <div class="form">
+        <form id="formulario">
+            <h3>Registre abaixo suas observações com relação a cidade de Campinas</h3>
+            <textarea id="txtDescricao" maxlength="500" placeholder="Descrição" required></textarea>
+            <input type="text" id="txtLocal" maxlength="100" placeholder="Local" required/>
+            <input type="file" id="flFoto" required/>
+            <button onclick="enviaProblema(event);"> Enviar</button>    
+        </form> 
+    </div>   
+
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-storage.js"></script>
+
+    <script type="text/javascript" src="script/env.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+
+    <div id="rodape"> 
+       <p>Copyright © 2021 | Letícia de Araújo Leal</p>
+      </div>
+      
+    </body>
+    
+</html>
